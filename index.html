@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>HTML Form</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
     <div class="container">
@@ -15,16 +15,16 @@
         <hr>
         <form action="" class="form1">
             <div class="form-content">
-                <p>First Name:</p>
-                <input type="text" name="firstName" id="firstName" class="text" placeholder="Enter your first name">
+                <p>First Name<span class="required">*</span>:</p>
+                <input type="text" name="firstName" id="firstName" class="text" placeholder="Enter your first name" required>
             </div>
             <div class="form-content">
-                <p>Last Name:</p>
-                <input type="text" name="lastName" id="lastName" class="text" placeholder="Enter your last name">
+                <p>Last Name<span class="required">*</span>:</p>
+                <input type="text" name="lastName" id="lastName" class="text" placeholder="Enter your last name" required>
             </div>
             <div class="form-content">
-                <p>Email:</p>
-                <input type="email" name="email" id="email" class="text" placeholder="Enter your email">
+                <p>Email<span class="required">*</span>:</p>
+                <input type="email" name="email" id="email" class="text" placeholder="Enter your email" required>
             </div>
             <div class="form-content">
                 <p>Password:</p>
@@ -39,8 +39,8 @@
                 <input type="date" name="dob" id="dob" class="text">
             </div>
             <div class="form-content">
-                <p>Gender:</p>
-                <input type="radio" id="male" name="gender" value="male">
+                <p>Gender<span class="required">*</span>:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label><br>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br>
@@ -48,8 +48,8 @@
                 <label for="other">Other</label><br>
             </div>
             <div class="form-content">
-                <p>Select Course:</p>
-                <select name="course" id="course" class="text">
+                <p>Select Course<span class="required">*</span>:</p>
+                <select name="course" id="course" class="text" required>
                     <option value="ds">Data Structure</option>
                     <option value="toa">Theory Of Automata</option>
                     <option value="cc">Compiler Construction</option>
@@ -62,8 +62,8 @@
                 </select>
             </div>
             <div class="form-content">
-                <p>Address:</p>
-                <input type="text" name="address" id="address" class="text" placeholder="Enter your address">
+                <p>Address<span class="required">*</span>:</p>
+                <input type="text" name="address" id="address" class="text" placeholder="Enter your address" required>
             </div>
             <div class="form-content">
                 <p>Upload your registration card:</p>
